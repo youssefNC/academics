@@ -158,7 +158,7 @@ header .fl-header .header-img img:last-child {
 
 /* Top categories */
 .top-categories {
-  padding: 50px 0px;
+  padding: 80px 0px;
 }
 
 .top-categories .fl-tc {
@@ -172,6 +172,7 @@ header .fl-header .header-img img:last-child {
   text-align: center;
   font-size: 50px;
   color: #1a2e35;
+  margin-bottom: 30px;
 }
 
 .top-categories .fl-tc .categorie {
@@ -180,17 +181,80 @@ header .fl-header .header-img img:last-child {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 20px;
+  border-radius: 10px;
 }
 
 .top-categories .fl-tc .categorie img {
-  width: 75px;
+  width: 60px;
 }
 
 .top-categories .fl-tc .categorie span {
   font-size: 22px;
   margin-left: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #1a2e35;
+}
+
+/* The Best Online Education Section */
+.boe-section {
+  padding: 80px 0px;
+  background-color: #eee;
+  position: relative;
+}
+
+.boe-section .fl-boe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boe-section .fl-boe .boe-info,
+.boe-section .fl-boe .boe-img {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.boe-section .fl-boe .boe-info h2 {
+  width: 100%;
+  font-size: 50px;
+  font-weight: bold;
+  color: #1a2e35;
+  margin-bottom: 15px;
+}
+.boe-section .fl-boe .boe-info p {
+  width: 100%;
+  color: rgb(26 46 53 / 70%);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.boe-section .fl-boe .boe-info button {
+  width: 50%;
+  padding: 18px;
+  border-radius: 30px;
+  background: var(--main-color);
+  border: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.boe-section .fl-boe .boe-img img {
+  width: 100%;
+}
+
+.boe-section::before {
+  content: url(../img/SVG/boe-wave.svg);
+  position: absolute;
+  bottom: calc(80px - 20px);
+  right: 0px;
+  width: 50%;
+  height: auto;
+  z-index: 9;
 }
 
 /* my framwork style */
@@ -200,4 +264,13 @@ ul {
 
 .active {
   color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
