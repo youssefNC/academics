@@ -1,0 +1,203 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #f6921e;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small & Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* nav */
+nav {
+  height: 110px;
+}
+
+nav .fl-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav .fl-nav .nav-logo {
+  width: 30%;
+}
+
+nav .fl-nav .nav-logo img {
+  width: 50%;
+}
+
+nav .fl-nav .nav-links {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .fl-nav .nav-links li:not(.active) {
+  color: #1a2e35;
+}
+
+nav .fl-nav .nav-links li img {
+  width: 13px;
+  margin-left: 5px;
+}
+
+nav .fl-nav .nav-btn {
+  width: 10%;
+}
+
+nav .fl-nav .nav-btn button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 30px;
+  background: var(--main-color);
+  border: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* header */
+header {
+  height: calc(100vh - 110px);
+}
+
+header .fl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .fl-header .header-info {
+  width: 47%;
+}
+
+header .fl-header .header-info h1 {
+  font-size: 65px;
+  color: #1a2e35;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+header .fl-header .header-info p {
+  color: rgb(26 46 53 / 70%);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header .fl-header .header-info button {
+  width: 40%;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: var(--main-color);
+  border: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+header .fl-header .header-img {
+  width: 47%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header .fl-header .header-img img {
+  height: 80%;
+}
+
+header .fl-header .header-img img:last-child {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  bottom: 15px;
+  left: 0px;
+}
+
+/* Top categories */
+.top-categories {
+  padding: 50px 0px;
+}
+
+.top-categories .fl-tc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.top-categories .fl-tc h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: #1a2e35;
+}
+
+.top-categories .fl-tc .categorie {
+  width: calc(25% - 10px);
+  background: #eee;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.top-categories .fl-tc .categorie img {
+  width: 75px;
+}
+
+.top-categories .fl-tc .categorie span {
+  font-size: 22px;
+  margin-left: 30px;
+}
+
+/* my framwork style */
+ul {
+  list-style: none;
+}
+
+.active {
+  color: var(--main-color);
+}
